@@ -4,7 +4,7 @@
 #include <vector>
 
 // Source:
-// https://github.com/gixim/competitive-cpp-snippets/blob/main/snippets/prime.h
+// https://github.com/gixim/competitive-cpp-library/blob/main/snippets/prime.h
 //
 // Reference:
 // https://atcoder.jp/contests/abc383/editorial/11553
