@@ -1,6 +1,7 @@
 #ifndef __SNIPPETS_PRIME__
 #define __SNIPPETS_PRIME__
 
+#include <cassert>
 #include <vector>
 
 // Source:
@@ -31,7 +32,10 @@ struct prime {
         }
     }
 
-    bool is_prime(int n) { return p[n]; }
+    bool is_prime(int n) {
+        assert(0 <= n && n < (int)p.size());
+        return p[n];
+    }
     const std::vector<int>& get_prime_list(void) { return l; }
 };
 
