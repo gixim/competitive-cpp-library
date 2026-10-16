@@ -6,7 +6,7 @@
 #include <string>
 
 // Source:
-// https://github.com/gixim/competitive-cpp-library/blob/main/snippets/grids.h
+// https://github.com/gixim/competitive-cpp-library/blob/main/snippets/base.h
 namespace snippets::base {
 
 template <typename T>
