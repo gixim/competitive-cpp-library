@@ -32,11 +32,11 @@ struct prime {
         }
     }
 
-    bool is_prime(int n) {
+    bool is_prime(int n) const {
         assert(0 <= n && n < (int)p.size());
         return p[n];
     }
-    const std::vector<int>& get_prime_list(void) { return l; }
+    const std::vector<int>& get_prime_list(void) const { return l; }
 };
 
 }  // namespace snippets::prime
