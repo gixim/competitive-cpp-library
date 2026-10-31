@@ -12,17 +12,17 @@
 namespace snippets::argsort {
 
 struct point {
-    long x;
-    long y;
+    long long x;
+    long long y;
 };
 
-inline long cross_product(const point& a, const point& b) {
+inline long long cross_product(const point& a, const point& b) {
     return (a.x * b.y) - (a.y * b.x);
 }
 
 inline bool cmp_rot_left(const point& a, const point& b) {
-    long ah = ((a.y < 0) || ((a.y == 0) && (a.x < 0))) ? 1 : 0;
-    long bh = ((b.y < 0) || ((b.y == 0) && (b.x < 0))) ? 1 : 0;
+    long long ah = ((a.y < 0) || ((a.y == 0) && (a.x < 0))) ? 1 : 0;
+    long long bh = ((b.y < 0) || ((b.y == 0) && (b.x < 0))) ? 1 : 0;
     if (ah != bh) {
         return ah < bh;
     }
